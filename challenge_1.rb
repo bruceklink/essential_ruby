@@ -14,6 +14,7 @@
 #   http://en.wikipedia.org/wiki/Mortgage_calculator
 
 def pmt(interest_rate, number_of_payments, present_value)
+	pmt = (present_value*interest_rate/12*(1+interest_rate/12)**number_of_payments)/((1+interest_rate/12)**number_of_payments-1)
 
 end
 
